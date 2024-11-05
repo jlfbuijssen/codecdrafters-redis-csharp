@@ -1,6 +1,8 @@
 using System.Net;
 using System.Net.Sockets;
 
+Console.WriteLine("Your logs will appear here:");
+
 TcpListener server = new TcpListener(IPAddress.Any, 6379);
 server.Start();
 Socket socket = server.AcceptSocket(); // wait for client
